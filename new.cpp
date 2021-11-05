@@ -1,6 +1,19 @@
 #include <stdio.h>
-
-// main method
-int main(){
-    
+int main() {
+unsigned n, k, i, count;
+printf( "Nhap n: " );
+scanf( "%u", &n );
+k = 2;
+count = 0;
+while ( count < n ) { /* vòng lặp kiểm tra k có phải là số nguyên tố */
+for ( i = 2; i * i <= k; ++i )
+if ( k % i == 0 ) break;
+if ( i * i > k ) {
+printf( "%u ", k );
+count++;
+}
+k++;
+}
+putchar( '\n' );
+return 0;
 }
