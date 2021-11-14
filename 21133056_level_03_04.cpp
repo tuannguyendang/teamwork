@@ -15,6 +15,9 @@ void nhap(int &n)
 {
 	cin>>n;
 }
+/**
+* method sum
+**/
 long tinhtoan(int n)
 {
 	long s=1;
